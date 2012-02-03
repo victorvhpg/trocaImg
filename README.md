@@ -1,7 +1,6 @@
- 
 @victorvhpg
 03/02/2012
-http://jsfiddle.net/victorvhpg/YfYMN/embedded/result/
+http://fiddle.jshell.net/victorvhpg/YfYMN/show/light/
 efeito que parece um flip horizontal
 funciona assim:
 anime a imagem para largura 0 e margin-left para a metade da largura,
@@ -11,4 +10,3 @@ e anime novamente para largura original e margin-left 0
 Com isso parece que ela faz um flip mas na verdade nao faz :)
 exemplo de uso:
 $("img").trocaImg("imagens/teste.jpg");
- 
