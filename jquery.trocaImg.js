@@ -51,11 +51,11 @@
                             "complete": function() {
                                 $(this).data("animando", false);
                             },
-                            "duration": 300
+                            "duration": configuracoes.velocidade
                         });
                     });
                 },
-                "duration": 300
+                "duration": configuracoes.velocidade
             });
 
         }); //each
