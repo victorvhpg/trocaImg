@@ -51,11 +51,11 @@ http://fiddle.jshell.net/victorvhpg/YfYMN/show/light/
                             "complete": function() {
 								$(this).data("animando" , false);
                             },
-                            "duration": 300
+                            "duration": config.velocidade
                         });
                     });
                 },
-                "duration": 300
+                "duration": config.velocidade
             });
 
         }); //each
