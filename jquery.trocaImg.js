@@ -48,11 +48,11 @@
                             "complete": function() {
                                 ANIMANDO = false;
                             },
-                            "duration": 300
+                            "duration": config.velocidade
                         });
                     });
                 },
-                "duration": 300
+                "duration": config.velocidade
             });
 
         }); //each
