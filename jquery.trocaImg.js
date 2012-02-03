@@ -2,8 +2,8 @@
  @victorvhpg
  03/02/2012
  
- http://jsfiddle.net/victorvhpg/YfYMN/embedded/result/
- 
+http://fiddle.jshell.net/victorvhpg/YfYMN/show/light/
+
  efeito que parece um flip horizontal
  funciona assim:
  anime a imagem para largura 0 e margin-left para a metade da largura,
@@ -27,7 +27,10 @@
             $.extend(config, configuracoes);
         }
         return this.each(function() {
-            var ANIMANDO = false;
+			if($(this).data("animando")){
+			   return;
+			}
+			$(this).data("animando" , true);
             var larguraOriginal = $(this).width();
             var altura = $(this).height(); //
             //anima pra a metade do tamanho
@@ -46,7 +49,7 @@
                             "margin-left": "0px"
                         }, {
                             "complete": function() {
-                                ANIMANDO = false;
+								$(this).data("animando" , false);
                             },
                             "duration": 300
                         });
